@@ -14,3 +14,8 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+.table-striped tbody tr:nth-of-type(odd) {
+  /*background-color: rgba(0,0,0,.05);*/
+  background-color: rgba(61, 71, 191, 0.10);
+}

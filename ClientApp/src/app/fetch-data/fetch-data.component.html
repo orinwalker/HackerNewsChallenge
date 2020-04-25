@@ -1,12 +1,10 @@
 <h1 id="tableLabel">Hacker News</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
-
-
+<p>Data courtesy of the <a href="https://github.com/HackerNews/API">Hacker News API</a></p>
 
 <p *ngIf="!hackerNews"><em>Loading...</em></p>
 <p *ngIf="hackerNews">
-  <em>We have data...</em><br /><br />
+  <!--<em>We have data...</em><br /><br />-->
   
     <!--{{ hackerNews | json }}-->
   
@@ -19,9 +17,9 @@
       <!--<th>Decendants</th>-->
       <!--<th>Id</th>-->
       <!--<th>Kids</th>-->
-      <th>Score</th>
+      <!--<th>Score</th>-->
       <!--<th>Time</th>-->
-      <th>How Long Ago</th>
+      <th>Age</th>
       <th>Title</th>
       <!--<th>Type</th>-->
       <th>Url</th>
@@ -35,7 +33,7 @@
       <!--<td *ngFor="let kid of article.kids">
       {{ kid }}
   </td>-->
-      <td>{{ article.score }}</td>
+      <!--<td>{{ article.score }}</td>-->
       <!--<td>{{ article.time }}</td>-->
       <td>{{ article.howLongAgo }}</td>
       <td>{{ article?.title }}</td>
