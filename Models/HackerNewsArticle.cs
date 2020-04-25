@@ -26,7 +26,7 @@ namespace HackerNewsModernUI.Models
         {
             get
             {
-                return GetTimeSince(this.UtcDateTime);
+                return GetHowLongAgo(this.UtcDateTime);
             }
         }
         public string Title { get; set;}
@@ -34,44 +34,19 @@ namespace HackerNewsModernUI.Models
         public string Url { get; set;}
 
         // TODO: move this to a library/service 
-        // return how much time passed since date object
-        // https://www.thatsoftwaredude.com/content/1019/how-to-calculate-time-ago-in-c
-        //
-        private static string GetTimeSince(DateTime objDateTime)
+        // TODO: Add some test functions for this one
+        private static string GetHowLongAgo(DateTime objDateTime)
         {
-            // here we are going to subtract the passed in DateTime from the current time converted to UTC
             TimeSpan ts = DateTime.Now.ToUniversalTime().Subtract(objDateTime);
-            int intDays = ts.Days;
-            int intHours = ts.Hours;
-            int intMinutes = ts.Minutes;
-            int intSeconds = ts.Seconds;
-
-            if (intDays > 0)
-                return string.Format("{0} days", intDays);
-
-            if (intHours > 0)
-                return string.Format("{0} hours", intHours);
-
-            if (intMinutes > 0)
-                return string.Format("{0} minutes", intMinutes);
-
-            if (intSeconds > 0)
-                return string.Format("{0} seconds", intSeconds);
-
-            // let's handle future times..just in case
-            if (intDays < 0)
-                return string.Format("in {0} days", Math.Abs(intDays));
-
-            if (intHours < 0)
-                return string.Format("in {0} hours", Math.Abs(intHours));
-
-            if (intMinutes < 0)
-                return string.Format("in {0} minutes", Math.Abs(intMinutes));
-
-            if (intSeconds < 0)
-                return string.Format("in {0} seconds", Math.Abs(intSeconds));
-
-            return "a bit";
+            if (ts.Days > 0)
+                return string.Format("{0} day{1} ago", ts.Days, ts.Days == 1 ? "" : "s");
+            if (ts.Hours > 0)
+                return string.Format("{0} hour{1} ago", ts.Hours, ts.Hours == 1 ? "" : "s");
+            if (ts.Minutes > 0)
+                return string.Format("{0} minute{1} ago", ts.Minutes, ts.Minutes == 1 ? "" : "s");
+            if (ts.Seconds > 0)
+                return string.Format("{0} second{1} ago", ts.Seconds, ts.Seconds == 1 ? "" : "s");
+            return string.Empty;
         }
     }
 }

@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { HackerNewsComponent } from './hacker-news/hacker-news.component';
 
 
@@ -18,7 +17,6 @@ import { HackerNewsComponent } from './hacker-news/hacker-news.component';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent,
     HackerNewsComponent
   ],
   imports: [
@@ -30,9 +28,8 @@ import { HackerNewsComponent } from './hacker-news/hacker-news.component';
       // TODO: cleanup comments
       // TODO: remove the other routes that are not being used
       // TODO: Add 404 and error page handling
-      { path: '', component: FetchDataComponent, pathMatch: 'full' },
+      { path: '', component: HackerNewsComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
       { path: 'home', component: HomeComponent }
       //{ path: 'hacker-news', component: FetchDataComponent },
     ])
