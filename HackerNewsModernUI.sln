@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNewsModernUI", "HackerNewsModernUI.csproj", "{28C3BE26-5BE7-4CBD-92D8-B9F6DAA3E75C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNewsTests", "..\HackerNewsTests\HackerNewsTests.csproj", "{169A23F7-5AEA-4EDA-88CB-A411851021A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{28C3BE26-5BE7-4CBD-92D8-B9F6DAA3E75C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28C3BE26-5BE7-4CBD-92D8-B9F6DAA3E75C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28C3BE26-5BE7-4CBD-92D8-B9F6DAA3E75C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{169A23F7-5AEA-4EDA-88CB-A411851021A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{169A23F7-5AEA-4EDA-88CB-A411851021A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{169A23F7-5AEA-4EDA-88CB-A411851021A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{169A23F7-5AEA-4EDA-88CB-A411851021A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

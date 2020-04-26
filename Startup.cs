@@ -25,6 +25,7 @@ namespace HackerNewsModernUI
             // Add services
             services.AddTransient<IHackerNewsService, HackerNewsService>();
             services.AddTransient<IHackerNewsCachedService, HackerNewsCachedService>();
+            services.AddSingleton<IUtilities, Utilities>();
 
             // Add controllers
             // TODO: this needs to be API controller
