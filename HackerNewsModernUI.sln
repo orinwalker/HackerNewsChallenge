@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNewsModernUI", "HackerNewsModernUI.csproj", "{28C3BE26-5BE7-4CBD-92D8-B9F6DAA3E75C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNewsModernUI", "HackerNewsModernUI\HackerNewsModernUI.csproj", "{34DFE98D-C1FC-45E3-BD9C-176C0573BE9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNewsTests", "..\HackerNewsTests\HackerNewsTests.csproj", "{169A23F7-5AEA-4EDA-88CB-A411851021A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNewsTests", "HackerNewsTests\HackerNewsTests.csproj", "{DC769860-213E-4E87-A32D-E1BC6EB40DCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{28C3BE26-5BE7-4CBD-92D8-B9F6DAA3E75C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28C3BE26-5BE7-4CBD-92D8-B9F6DAA3E75C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28C3BE26-5BE7-4CBD-92D8-B9F6DAA3E75C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28C3BE26-5BE7-4CBD-92D8-B9F6DAA3E75C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{169A23F7-5AEA-4EDA-88CB-A411851021A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{169A23F7-5AEA-4EDA-88CB-A411851021A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{169A23F7-5AEA-4EDA-88CB-A411851021A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{169A23F7-5AEA-4EDA-88CB-A411851021A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34DFE98D-C1FC-45E3-BD9C-176C0573BE9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DFE98D-C1FC-45E3-BD9C-176C0573BE9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34DFE98D-C1FC-45E3-BD9C-176C0573BE9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34DFE98D-C1FC-45E3-BD9C-176C0573BE9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC769860-213E-4E87-A32D-E1BC6EB40DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC769860-213E-4E87-A32D-E1BC6EB40DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC769860-213E-4E87-A32D-E1BC6EB40DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC769860-213E-4E87-A32D-E1BC6EB40DCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
