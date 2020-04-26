@@ -29,6 +29,8 @@ namespace HackerNewsModernUI.Controllers
         //    return new string[] { "value1", "value2" };
         //}
 
+
+        // TODO: Can this be an ActionResult?
         // GET: api/HackerNews
         [HttpGet]
         public async Task<IEnumerable<IHackerNewsArticle>> Get()

@@ -4,7 +4,7 @@ using Xunit;
 
 namespace HackerNewsTests
 {
-    public class HowLongAgo
+    public class HowLongAgoTests
     {
         [Fact]
         public void HowLongAgo_1_DayAgo()

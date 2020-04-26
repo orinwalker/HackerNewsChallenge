@@ -381,10 +381,13 @@ C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\bin\Debug\netcore
 C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\bin\Debug\netcoreapp3.1\HackerNewsModernUI.dll
 C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\bin\Debug\netcoreapp3.1\HackerNewsModernUI.pdb
 C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\obj\Debug\netcoreapp3.1\HackerNewsTests.csprojAssemblyReference.cache
-C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\obj\Debug\netcoreapp3.1\HackerNewsTests.csproj.CoreCompileInputs.cache
 C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\obj\Debug\netcoreapp3.1\HackerNewsTests.AssemblyInfoInputs.cache
 C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\obj\Debug\netcoreapp3.1\HackerNewsTests.AssemblyInfo.cs
 C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\obj\Debug\netcoreapp3.1\HackerNewsTests.csproj.CopyComplete
 C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\obj\Debug\netcoreapp3.1\HackerNewsTests.dll
 C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\obj\Debug\netcoreapp3.1\HackerNewsTests.pdb
 C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\obj\Debug\netcoreapp3.1\HackerNewsTests.genruntimeconfig.cache
+C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\obj\Debug\netcoreapp3.1\HackerNewsTests.csproj.CoreCompileInputs.cache
+C:\Users\orin\source\repos\HackerNewsChallenge\HackerNewsTests\bin\Debug\netcoreapp3.1\AutoMapper.dll
