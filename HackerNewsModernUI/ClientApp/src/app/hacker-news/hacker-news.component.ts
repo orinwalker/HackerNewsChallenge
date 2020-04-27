@@ -23,4 +23,22 @@ export class HackerNewsComponent implements OnInit {
     });
   }
 
+  searchHackerNews(searchTerm) {
+    // TODO: fix up error handling
+    console.log('searchHackerNews ' + searchTerm);
+    this.hackerNewsService.searchHackerNews(searchTerm).subscribe((data) => {
+      // console.log('data received from search: ' + data);
+      this.hackerNews = data;
+    });
+  }
+
+  reset() {
+    // TODO: fix up error handling
+    console.log('reset');
+    this.hackerNewsService.getHackerNews().subscribe((data) => {
+      // console.log('data received after reset: ' + data);
+      this.hackerNews = data;
+    });
+  }
+
 }

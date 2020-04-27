@@ -15,6 +15,15 @@ namespace HackerNewsModernUI.Services
 
         // TODO: Inject Logger into constructor
 
+        public async Task<IEnumerable<IHackerNewsArticle>> SearchTopStoriesAsync(string searchTerm)
+        {
+            var response = await GetAllTopStoriesAsync();
+            var topStories = response.ToList();
+            var searchResult = topStories.Where(s => s.Title.Contains(searchTerm));
+            return searchResult;
+        }
+
+        // TODO: You must rename this method!
         public async Task<HackerNewsArticle> GetNewsAsync(int articleId)
         {
             // TODO: get this from config file

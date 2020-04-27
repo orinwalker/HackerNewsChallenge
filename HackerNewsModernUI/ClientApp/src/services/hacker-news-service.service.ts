@@ -13,15 +13,20 @@ export class HackerNewsServiceService {
     this.baseUrl = baseUrl;
   }
 
-  // TODO: Need better error handling here
-  public getHackerNewsOLD() {
-    return this.httpClient.get<HackerNews[]>(this.baseUrl+ 'api/hackernews').subscribe(result => {
-      //this.hackerNews = result;
-      console.log('hackerNews: ' + result);
-      //return result;
-    }, error => console.error(error));
-  }
 
+  // public getHackerNewsOLD() {
+  //   return this.httpClient.get<HackerNews[]>(this.baseUrl+ 'api/hackernews').subscribe(result => {
+  //     //this.hackerNews = result;
+  //     console.log('hackerNews: ' + result);
+  //     //return result;
+  //   }, error => console.error(error));
+  // }
+
+  // TODO: Need better error handling here
+  public searchHackerNews(searchTerm: string) {
+    return this.httpClient.get<HackerNews[]>(this.baseUrl + 'api/hackernews/' + searchTerm);
+  }
+  // TODO: Need better error handling here
   public getHackerNews() {
     return this.httpClient.get<HackerNews[]>(this.baseUrl + 'api/hackernews');
   }

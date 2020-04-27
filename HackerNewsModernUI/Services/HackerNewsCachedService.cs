@@ -18,6 +18,7 @@ namespace HackerNewsModernUI.Services
             _memoryCache = memoryCache;
         }
 
+       
         // TODO: make async
         public Task<HackerNewsArticle> GetNewsAsync(int articleId)
         {
@@ -65,6 +66,22 @@ namespace HackerNewsModernUI.Services
                 var topStories = await _innerHackerNewsService.GetAllTopStoriesAsync();
                 _memoryCache.Set(cacheKey, topStories, TimeSpan.FromMinutes(10));
                 return topStories;
+            }
+        }
+
+        public async Task<IEnumerable<IHackerNewsArticle>> SearchTopStoriesAsync(string searchTerm)
+        {
+            var cacheKey = "HackerNewsServiceCaching.GetAllTopStoriesAsync." + searchTerm;
+            if (_memoryCache.TryGetValue<IEnumerable<IHackerNewsArticle>>(cacheKey, out var storyTask))
+            {
+                return storyTask;
+            }
+            else
+            {
+                // TODO: Read the timespan here from the config file
+                var topSearched = await _innerHackerNewsService.SearchTopStoriesAsync(searchTerm);
+                _memoryCache.Set(cacheKey, topSearched, TimeSpan.FromMinutes(10));
+                return topSearched;
             }
         }
     }

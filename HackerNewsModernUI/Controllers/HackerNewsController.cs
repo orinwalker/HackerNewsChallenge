@@ -53,47 +53,42 @@ namespace HackerNewsModernUI.Controllers
         [HttpGet]
         public async Task<IEnumerable<IHackerNewsArticle>> Get()
         {
-            //var newsItems = new List<IHackerNewsArticle>();
-            //var ts = await _hackerNews.GetTopStoriesAsync();
-            //var hackerItems = ts.ToList();
-            //if (hackerItems.Count > 0)
-            //{
-            //    foreach (var id in hackerItems)
-            //    {
-            //        var r = await _hackerNews.GetNewsAsync(id);
-            //        newsItems.Add(r);
-            //    }
-            //}
-
-            //return newsItems;
-
             var result = await _hackerNews.GetAllTopStoriesAsync();
             return result;
         }
 
-        // GET: api/HackerNews/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        // TODO: remember to add a unit test for this
+        // GET: api/HackerNews/Microsoft
+        [HttpGet("{searchTerm}", Name = "Get")]
+        public async Task<IEnumerable<IHackerNewsArticle>> Get(string searchTerm)
         {
-            return "value";
+            var result = await _hackerNews.SearchTopStoriesAsync(searchTerm);
+            return result;
         }
 
-        // POST: api/HackerNews
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
+        // // GET: api/HackerNews/5
+        // [HttpGet("{id}", Name = "Get")]
+        // public string Get(int id)
+        // {
+        //     return "value";
+        // }
 
-        // PUT: api/HackerNews/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+        // // POST: api/HackerNews
+        // [HttpPost]
+        // public void Post([FromBody] string value)
+        // {
+        // }
 
-        // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        // // PUT: api/HackerNews/5
+        // [HttpPut("{id}")]
+        // public void Put(int id, [FromBody] string value)
+        // {
+        // }
+
+        // // DELETE: api/ApiWithActions/5
+        // [HttpDelete("{id}")]
+        // public void Delete(int id)
+        // {
+        // }
     }
 }

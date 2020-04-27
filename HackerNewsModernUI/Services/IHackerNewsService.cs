@@ -8,6 +8,7 @@ namespace HackerNewsModernUI.Services
 {
     public interface IHackerNewsService
     {
+        Task<IEnumerable<IHackerNewsArticle>> SearchTopStoriesAsync(string searchTerm);
         Task<HackerNewsArticle> GetNewsAsync(int articleId);
         Task<IEnumerable<int>> GetTopStoriesAsync();
         Task<IEnumerable<IHackerNewsArticle>> GetAllTopStoriesAsync();
