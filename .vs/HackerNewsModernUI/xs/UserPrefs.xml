@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{34DFE98D-C1FC-45E3-BD9C-176C0573BE9E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HackerNewsModernUI/Program.cs">
+    <Files>
+      <File FileName="HackerNewsTests/HackerNewsControllerTests.cs" Line="78" Column="16" />
+      <File FileName="HackerNewsModernUI/Program.cs" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HackerNewsModernUI" expanded="True">
+            <Node name="HackerNewsModernUI" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+            <Node name="HackerNewsTests" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="HackerNewsModernUI" expanded="True">
+            <Node name="HackerNewsTests" expanded="True">
+              <Node name="HackerNewsTests" expanded="True">
+                <Node name="HackerNewsControllerTests" expanded="True">
+                  <Node name="TestController" selected="True" />
+                </Node>
+                <Node name="HackerNewsServiceTests" expanded="True" />
+                <Node name="HowLongAgoTests" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../HackerNewsTests/HackerNewsControllerTests.cs" line="76" column="28" endLine="76" endColumn="34" offsetX="-1" offsetY="-1" expression="result" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.HackerNewsModernUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/orin/Documents/source/repos/HackerNewsChallenge/HackerNewsTests/HackerNewsControllerTests.cs" relfile="HackerNewsTests/HackerNewsControllerTests.cs" line="77" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
