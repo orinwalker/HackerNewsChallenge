@@ -32,22 +32,43 @@ namespace HackerNewsModernUI.Controllers
 
         // TODO: Can this be an ActionResult?
         // GET: api/HackerNews
+        //[HttpGet]
+        //public async Task<IEnumerable<IHackerNewsArticle>> Get()
+        //{
+        //    var newsItems = new List<IHackerNewsArticle>();
+        //    var ts = await _hackerNews.GetTopStoriesAsync();
+        //    var hackerItems = ts.ToList();
+        //    if (hackerItems.Count > 0)
+        //    {
+        //        foreach (var id in hackerItems)
+        //        {
+        //            var r = await _hackerNews.GetNewsAsync(id);
+        //            newsItems.Add(r);
+        //        }
+        //    }
+
+        //    return newsItems;
+        //}
+
         [HttpGet]
         public async Task<IEnumerable<IHackerNewsArticle>> Get()
         {
-            var newsItems = new List<IHackerNewsArticle>();
-            var ts = await _hackerNews.GetTopStoriesAsync();
-            var hackerItems = ts.ToList();
-            if (hackerItems.Count > 0)
-            {
-                foreach (var id in hackerItems)
-                {
-                    var r = await _hackerNews.GetNewsAsync(id);
-                    newsItems.Add(r);
-                }
-            }
+            //var newsItems = new List<IHackerNewsArticle>();
+            //var ts = await _hackerNews.GetTopStoriesAsync();
+            //var hackerItems = ts.ToList();
+            //if (hackerItems.Count > 0)
+            //{
+            //    foreach (var id in hackerItems)
+            //    {
+            //        var r = await _hackerNews.GetNewsAsync(id);
+            //        newsItems.Add(r);
+            //    }
+            //}
 
-            return newsItems;
+            //return newsItems;
+
+            var result = await _hackerNews.GetAllTopStoriesAsync();
+            return result;
         }
 
         // GET: api/HackerNews/5

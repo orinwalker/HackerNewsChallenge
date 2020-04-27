@@ -1,3 +1,5 @@
+using AutoMapper;
+using HackerNewsModernUI.Mappings;
 using HackerNewsModernUI.Models;
 using HackerNewsModernUI.Services;
 using Microsoft.AspNetCore.Builder;
@@ -31,6 +33,18 @@ namespace HackerNewsModernUI
             // Add controllers
             // TODO: this needs to be API controller
             services.AddControllersWithViews();
+
+            //services.AddControllers();
+            // Auto Mapper Configurations
+
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new SimpleMappings());
+            });
+
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
 
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>

@@ -10,5 +10,6 @@ namespace HackerNewsModernUI.Services
     {
         Task<HackerNewsArticle> GetNewsAsync(int articleId);
         Task<IEnumerable<int>> GetTopStoriesAsync();
+        Task<IEnumerable<IHackerNewsArticle>> GetAllTopStoriesAsync();
     }
 }

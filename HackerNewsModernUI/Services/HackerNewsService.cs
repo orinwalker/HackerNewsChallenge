@@ -41,6 +41,23 @@ namespace HackerNewsModernUI.Services
             return newsArticle;
         }
 
+        public async Task<IEnumerable<IHackerNewsArticle>> GetAllTopStoriesAsync() 
+        {
+            var newsItems = new List<IHackerNewsArticle>();
+            var ts = await this.GetTopStoriesAsync();
+            var hackerItems = ts.ToList();
+            if (hackerItems.Count > 0)
+            {
+                foreach (var id in hackerItems)
+                {
+                    var r = await this.GetNewsAsync(id);
+                    newsItems.Add(r);
+                }
+            }
+
+            return newsItems;
+        }
+
         public async Task<IEnumerable<int>> GetTopStoriesAsync()
         {
             // TODO: get this from config file
