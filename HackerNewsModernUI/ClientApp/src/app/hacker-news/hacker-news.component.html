@@ -1,0 +1,37 @@
+<h1 id="tableLabel">Hacker News Top Stories</h1>
+
+<p>Hacker news 'Top Stories' courtesy of the <a href="https://github.com/HackerNews/API" target="_blank">Hacker News API</a></p>
+
+<p *ngIf="!hackerNews">
+  <em>Loading top stories... the first load will take a little while...</em>
+</p>
+<p *ngIf="hackerNews">
+  <!--{{ hackerNews | json }}-->
+</p>
+
+<div *ngIf="hackerNews">
+  <div class="form-group"> 
+    <label for="search">Search Top News Stories</label>
+    <input #searchTerm type="text" maxlength="50" (keydown.enter)="searchHackerNews($event.target.value)" class="form-control" id="search" name="search" value="" required>
+    <button (click)="searchHackerNews(searchTerm.value)" type="submit" class="btn btn-primary">Search</button>
+    <button (click)="reset()" type="submit" class="btn btn-primary">Reset</button>
+  </div> 
+</div>
+  
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="hackerNews">
+  <thead>
+    <tr>
+      <th>Author</th>
+      <th>Post Age</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let article of hackerNews">
+      <td>{{ article?.by }}</td>
+      <td>{{ article?.howLongAgo }}</td>
+      <td><a href="{{ article?.url }}" target="_blank">{{ article?.title }}</a></td>
+    </tr>
+  </tbody>
+</table>
+
