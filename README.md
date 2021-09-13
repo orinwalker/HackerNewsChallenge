@@ -13,7 +13,7 @@ or you can this command to restore packages within Visual Studio. Choose Tools->
 ``` https://nodejs.org/en/download/ ```
 * You must also have the Angular CLI installed: 
 ``` npm install -g @angular/cli ```
-* Install the node pagkages from the /HackerNewsChallenge/HackerNewsModernUI/ClientApp/src/app using:
+* Install the node packages from the /HackerNewsChallenge/HackerNewsModernUI/ClientApp/src/app using:
 ``` npm install ```
 * Code will run with VS2019 on Windows or MacOs and also tested to run on VSCode on MacOs
 
