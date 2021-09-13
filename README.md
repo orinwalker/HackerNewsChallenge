@@ -6,8 +6,7 @@ This website is designed to use the Hacker News API, to return today's stories
 
 ### How to Build and Run
 * Please ensure you have restored packages before you run by running: 
-``` dotnet restore ```
-* Or you can this command to restore packages within Visual Studio. Choose Tools->Nuget Package Manager->Package Manager console from the menu. Then run this command and the Package Manager prompt: 
+``` dotnet restore `` or you can this command to restore packages within Visual Studio. Choose Tools->Nuget Package Manager->Package Manager console from the menu. Then run this command and the Package Manager prompt: 
 ``` Update-Package -reinstall ```
 * You must have Node.js installed: 
 ``` https://nodejs.org/en/download/ ```
