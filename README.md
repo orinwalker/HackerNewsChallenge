@@ -17,6 +17,9 @@ or you can this command to restore packages within Visual Studio. Choose Tools->
 ``` npm install ```
 * Code will run with VS2019 on Windows or MacOs and also tested to run on VSCode on MacOs
 
+### AI Software Training
+You are not allowed to train your Artifical Intelligence Engine on this codebase.
+
 ## Hacker News Modern UI
 Main Project with .NET Core and Angular
 ## Hacker News Tests
